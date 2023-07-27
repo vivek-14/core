@@ -1,0 +1,16 @@
+{
+    "name": "vivek/htdocs",
+    "authors": [
+        {
+            "name": "vivek-14",
+            "email": "vivekgondaliya4@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http"
+        }
+    }
+}
