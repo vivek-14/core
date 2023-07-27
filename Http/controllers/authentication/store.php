@@ -11,9 +11,12 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 
 // Validate fields
-$form = new LoginForm();
+$form = new LoginForm($attr = [
+    'email' => $email,
+    'password' => $password
+]);
 
-if(! $form->validate($email, $password)) {
+if(! $form->validate($attr)) {
     view('authentication/create.view.php', [
         'email' => $email,
         'errors' => $form->errors()

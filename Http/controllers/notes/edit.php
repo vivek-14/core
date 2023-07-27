@@ -21,7 +21,7 @@ if (!$note) {
 authorize($note['user_id'] === $currentUserId);
 
 
-require base_path('/views/notes/edit.view.php', [
+require view('/notes/edit.view.php', [
     'title' => $title,
     'note' => $note
 ]);

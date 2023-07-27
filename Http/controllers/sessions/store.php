@@ -1,8 +1,6 @@
 <?php
 
 use Core\Authenticator;
-use Core\Exceptions\ValidationException;
-use Core\Session;
 use Http\Forms\LoginForm;
 
 // Fetch fields
